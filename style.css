@@ -1,0 +1,28 @@
+:root{
+    --tomato:hsl(4,100%,67%);
+    --dark-slate-gray:hsl(234,29%,20%);
+    --charcoal:hsl(235,18%,26%);
+    --gray:hsl(231,7%,60%);
+    --white:hsl(0,0%,100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-slate-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
