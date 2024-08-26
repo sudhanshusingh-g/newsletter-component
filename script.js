@@ -7,6 +7,7 @@ const mainContainer=document.querySelector("main");
 const inputField = document.getElementById("input_field");
 const form=document.querySelector("form");
 const error_message=document.querySelector(".error_message");
+const email_address=document.getElementById("email_address");
 
 // Function to validate the email
 function validateEmail(email) {
@@ -34,6 +35,14 @@ form.addEventListener("submit",(e)=>{
     if(validateEmail(email)){
         successContainer.style.display = "block";
         formContainer.style.display = "none";
+        email_address.textContent=email;
+        window.innerWidth <= 768 
+        ? (mainContainer.style.height="100%") 
+        : (mainContainer.style.height="fit-content");
+        window.innerWidth <= 768
+          ? (mainContainer.style.width = "100%")
+          : (mainContainer.style.width = "40%");
+
         inputField.value="";
         hideError();
     }
@@ -53,6 +62,21 @@ else{
     `;
 }
 
+
+function updateLayout(){
+    if(window.innerWidth <= 768){
+        mainContainer.style.height="100%";
+        mainContainer.style.width="100%";
+    }
+    else{
+        mainContainer.style.height="fit-content";
+        mainContainer.style.width="40%";
+    }
+}
+
+window.addEventListener("resize",()=>{
+    updateLayout();
+});
 
 
 
