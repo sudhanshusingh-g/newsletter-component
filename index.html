@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -18,30 +17,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Newsletter sign-up form</title>
   </head>
   <body>
-    <!-- Sign-up form start -->
     <main>
-        <div class="content_container"></div>
-        <div class="image-container"></div>
+      <!-- Sign-up form start -->
+      <section id="newsletter_form_container">
+        <div class="image_container"></div>
+
+        <div class="content_container">
+          <div class="inner_content">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+              <li>
+                <div>
+                  <img
+                    src="./assets/images/icon-list.svg"
+                    alt="List Check mark icon"
+                  />
+                </div>
+                <span> Product discovery and building what matters </span>
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="./assets/images/icon-list.svg"
+                    alt="List Check mark icon"
+                  />
+                </div>
+                <span> Measuring to ensure updates are a success </span>
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="./assets/images/icon-list.svg"
+                    alt="List Check mark icon"
+                  />
+                </div>
+                <span> And much more! </span>
+              </li>
+            </ul>
+            <form action="">
+              <label for="Email">Email address</label>
+              <input
+                type="email"
+                id="input_field"
+                name="email"
+                placeholder="email@company.com"
+                required
+              />
+              <p class="error_message">WE</p>
+              <button type="submit" class="submit_button">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+      <section
+        id="success_message_container"
+        aria-live="polite"
+        aria-labelledby="success_message_heading"
+      >
+        <div class="message_header">
+          <img
+            src="./assets/images/icon-success.svg"
+            alt="Check mark icon to show the form has been submitted."
+          />
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <span id="email_address">ash@loremcompany.com</span>. Please open it
+            and click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <button aria-label="Dismiss success message" id="dismiss_button">
+          Dismiss message
+        </button>
+      </section>
+
+      <!-- Success message end -->
     </main>
-
-    Stay updated! Join 60,000+ product managers receiving monthly updates on:
-    Product discovery and building what matters Measuring to ensure updates are
-    a success And much more! Email address email@company.com Subscribe to
-    monthly newsletter
-
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
-    <!-- Success message end -->
-
-     
   </body>
 </html>
