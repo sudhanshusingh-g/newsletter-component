@@ -64,7 +64,7 @@ img{
 }
 
 #newsletter_form_container {
-  display: block;
+  display: none;
 }
 .image_container{
     width: 100%;
@@ -118,7 +118,7 @@ form{
 
 #success_message_container {
   height: 100vh;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
@@ -145,7 +145,7 @@ form{
   
   #newsletter_form_container {
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: row-reverse;
     gap: 0.8rem;
   }
@@ -163,6 +163,7 @@ form{
   }
     
   #success_message_container {
+    display: flex;
     height: auto;
   }
   .message_header {
