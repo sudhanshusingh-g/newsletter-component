@@ -146,7 +146,7 @@ form{
   
   #newsletter_form_container {
     height: 100%;
-    display: none;
+    display: flex;
     flex-direction: row-reverse;
     gap: 0.8rem;
   }
